@@ -6,6 +6,7 @@ $(document).ready(function(){
     const question3 = $("input:radio[name=question3]:checked").val();
     const question4 = $("input:radio[name=question4]:checked").val();
     const question5 = $("input:radio[name=question5]:checked").val();
+    const name = $("input#name").val();
 
     let cSharp = 0;
     let python = 0;
@@ -33,11 +34,14 @@ $(document).ready(function(){
 
 
     if (javaScript >= python || javaScript >= cSharp) {
-      $("#output").text("Use JavaScript")
+      $("#output").text(name + " Use JavaScript")
+      $("#output").fadeTo(600,1);
     } else if (cSharp >= python) {
-      $("#output").text("Use C#")
+      $("#output").text(name +" Use C#")
+      $("#output").fadeTo(600,1);
     } else {
-      $("#output").text("Use Python")
+      $("#output").text(name + " Use Python")
+      $("#output").fadeTo(600,1);
     }
   });
 });
