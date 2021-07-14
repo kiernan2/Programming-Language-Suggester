@@ -14,6 +14,10 @@ $(document).ready(function(){
 
     if (question1 === "1") {
       python += 1;
+    } else if (question1 === "2"){
+      cSharp += 1;
+    } else {
+      javaScript += 1;
     }
     if (question2 === "1") {
       python += 1;
@@ -24,12 +28,24 @@ $(document).ready(function(){
     }
     if (question3 === "1") {
       cSharp += 1;
+    } else if (question3 === "2") {
+      python += 1;
+    } else {
+      javaScript += 1;
     }
     if (question4 === "1") {
       javaScript += 1;
+    } else if (question4 === "2") {
+      cSharp += 1;
+    } else {
+      python += 1;
     }
     if (question5 === "1"){
       python += 1;
+    } else if (question5 === "2") {
+      cSharp += 1;
+    } else {
+      javaScript += 1;
     }
 
 
